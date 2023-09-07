@@ -13,8 +13,14 @@
       <th>{{statusNow}}</th>
     </tr>
   </tbody>
+
 </table>
 
-<button class="btn btn-outline-success">Aumentar</button>
-<button class="btn btn-outline-secondary">Disminuir</button>
-<button class="btn btn-outline-danger">Estado</button>
+<div *ngIf="this.saldo < 0" class="alert alert-danger" role="alert">
+  El saldo no puede ser negativo, debe ser mayor o igual a cero
+</div>
+
+<button class="btn btn-outline-success" (click)="aumentarSaldo()">Aumentar</button>
+<button class="btn btn-outline-secondary" (click)="disminuirSaldo()">Disminuir</button>
+
+<button class="btn btn-outline-danger" (click)="cambiarEstado()">Estado</button>
