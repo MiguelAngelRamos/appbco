@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  public title: string = 'Mi Cuenta de Banco';
+  public headersTable: string[] = ["Saldo", "Estado"];
+  public saldo: number = 10;
+  public statusNow: string = "Status off";
+  public status: boolean = false;
+
+
 }

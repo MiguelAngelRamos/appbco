@@ -8,13 +8,15 @@ import { GirosComponent } from './pages/giros/giros.component';
 
  //* http://localhost:4200/home
  //* http://localhost:4200/depositos
+ //* http://localhost:4200/about
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'depositos', component: DepositoComponent },
   { path: 'prestamos', component: PrestamosComponent },
   { path: 'cta-corriente', component: CuentaCorrienteComponent },
-  { path: 'giros', component: GirosComponent }
+  { path: 'giros', component: GirosComponent },
+  { path: '**', redirectTo: 'home'}
 ];
 
 @NgModule({

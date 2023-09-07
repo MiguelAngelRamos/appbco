@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IOptsNavbar } from 'src/app/interfaces/IOptsNavbar';
 
 @Component({
   selector: 'app-navbar',
@@ -6,13 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-
-  public opciones:any = [
+//* Typescript es superset de javascript
+  public opciones:IOptsNavbar[] = [
     { path: '/home', name: 'Home'},
     { path: '/depositos', name: 'Depositos'},
     { path: '/prestamos', name: 'Prestamos'},
-    { path: '/giros', name: 'Giros'},
-    { path: '/cta-corriente', name: 'Cuenta corriente'},
+    { path: '/giros', name: 'Giros'}
   ];
 
   public title: string = "Angular Bco";
