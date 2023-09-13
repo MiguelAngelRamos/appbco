@@ -1,1 +1,7 @@
-<p>posts works!</p>
+<h1>Lista de Posts</h1>
+
+<div class="row mb-1" *ngFor="let post of posts">
+  <h2>{{post.title}}</h2>
+  <p>{{post.body}}</p>
+  <hr>
+</div>

@@ -18,6 +18,10 @@ export class PostsComponent implements OnInit{
     this.dataService.getPosts().subscribe( posts => {
       this.posts = posts;
     });
+
+    //* let users = ['nombre', 'apellido', 'cuidad'] longitud = 3
+    //*                  0    ,     1     ,    2
+    //* users[2] = cuidad;
   }
 
 }
