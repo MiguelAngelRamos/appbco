@@ -12,7 +12,8 @@ export class NavbarComponent {
     { path: '/home', name: 'Home'},
     { path: '/depositos', name: 'Depositos'},
     { path: '/prestamos', name: 'Prestamos'},
-    { path: '/giros', name: 'Giros'}
+    { path: '/giros', name: 'Giros'},
+    { path: '/posts', name: 'Posts'}
   ];
 
   public title: string = "Angular Bco";

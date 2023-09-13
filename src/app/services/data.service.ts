@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { IPosts } from '../interfaces/IPosts';
 
 @Injectable({
   providedIn: 'root'
@@ -9,8 +11,8 @@ export class DataService {
   constructor(private http:HttpClient) { }
 
   //* GET - Vamos a traer todos los posts
-  getPosts():any {
-    return this.http.get('https://jsonplaceholder.typicode.com/posts');
+  getPosts():Observable<IPosts[]> {
+    return this.http.get<IPosts[]>('https://jsonplaceholder.typicode.com/posts');
   }
 
 }

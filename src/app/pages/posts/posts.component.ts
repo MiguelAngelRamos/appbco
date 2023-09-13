@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IPosts } from 'src/app/interfaces/IPosts';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({
@@ -8,13 +9,15 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class PostsComponent implements OnInit{
 
-  public posts: any[] = [];
+  public posts: IPosts[] = [];
 
   constructor(private dataService:DataService) {
-
   }
+
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.dataService.getPosts().subscribe( posts => {
+      this.posts = posts;
+    });
   }
 
 }
