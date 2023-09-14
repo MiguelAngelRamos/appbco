@@ -6,6 +6,7 @@ import { PrestamosComponent } from './pages/prestamos/prestamos.component';
 import { CuentaCorrienteComponent } from './pages/cuenta-corriente/cuenta-corriente.component';
 import { GirosComponent } from './pages/giros/giros.component';
 import { PostsComponent } from './pages/posts/posts.component';
+import { PhotosComponent } from './pages/photos/photos.component';
 
  //* http://localhost:4200/home
  //* http://localhost:4200/depositos
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'cta-corriente', component: CuentaCorrienteComponent },
   { path: 'giros', component: GirosComponent },
   { path: 'posts', component: PostsComponent },
+  { path: 'photos', component: PhotosComponent},
   { path: '**', redirectTo: 'home'}
 ];
 

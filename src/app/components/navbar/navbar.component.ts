@@ -13,7 +13,8 @@ export class NavbarComponent {
     { path: '/depositos', name: 'Depositos'},
     { path: '/prestamos', name: 'Prestamos'},
     { path: '/giros', name: 'Giros'},
-    { path: '/posts', name: 'Posts'}
+    { path: '/posts', name: 'Posts'},
+    { path: '/photos', name: 'Fotos'}
   ];
 
   public title: string = "Angular Bco";

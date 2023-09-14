@@ -11,6 +11,7 @@ import { PrestamosComponent } from './pages/prestamos/prestamos.component';
 import { GirosComponent } from './pages/giros/giros.component';
 import { CuentaCorrienteComponent } from './pages/cuenta-corriente/cuenta-corriente.component';
 import { PostsComponent } from './pages/posts/posts.component';
+import { PhotosComponent } from './pages/photos/photos.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { PostsComponent } from './pages/posts/posts.component';
     PrestamosComponent,
     GirosComponent,
     CuentaCorrienteComponent,
-    PostsComponent
+    PostsComponent,
+    PhotosComponent
   ],
   imports: [
     BrowserModule,
