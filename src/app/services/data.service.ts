@@ -15,4 +15,7 @@ export class DataService {
     return this.http.get<IPosts[]>('https://jsonplaceholder.typicode.com/posts');
   }
 
+  //* React, Vue (fetch y axios => para realizar el llamado hacia Api Rest)
+
+  //* HttpClient (para hacer llamados al Api Rest)
 }
